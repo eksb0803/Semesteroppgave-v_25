@@ -1,0 +1,477 @@
+body {
+    background-color: #0D0D0D;
+    font-family: 'Roboto', sans-serif; 
+    color: white;
+    margin: 0;
+}
+
+header {
+    padding: 20px 80px;
+    margin-bottom: 80px;
+    border-bottom: 4px solid #E86F3D;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left h1 {
+    font-size: 30px;
+    margin: 0;
+}
+.nav-left a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-left a:hover {
+    color: #E86F3D;
+}
+
+.nav-right a{
+    margin-left: 20px;
+    color: white;
+    font-weight: 500;
+    font-size: 18px
+}
+
+.nav-right a:hover {
+    text-decoration: underline;
+    color: #E86F3D;
+}
+@media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-right {
+      flex-direction: column;
+      width: 100%;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+  
+    .nav-right a {
+      display: block;
+    }
+  }
+/* Mobilvisning – tekst over bildet */
+@media (max-width: 768px) {
+    .logo-and-text {
+      display: block;
+      text-align: center;
+    }
+  
+    .welcome-text {
+      position: static; /* ikke absolutt, la den flyte normalt */
+      color: #333; /* gjerne mørk tekst på lys bakgrunn */
+      font-size: 1.5rem;
+      margin-bottom: 1rem; /* litt avstand mellom tekst og bilde */
+      text-shadow: none; /* fjern tekstskygge siden den ikke er over bildet */
+      padding: 0;
+    }
+  
+    .logo-image {
+      width: 100%;
+      display: block;
+    }
+  }
+  @media (max-width: 768px) {
+    #tree-pictures {
+      display: block !important;
+    }
+  
+    #tree-pictures img {
+      display: block !important;
+      width: 100% !important;
+      margin-bottom: 1rem !important;
+    }
+  }
+  
+.welcome-section {
+    background-image: url('images/celso-405219.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 60px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100vh;
+}
+
+.logo-and-text {
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 40px; 
+    width: 100%;
+}
+
+.logo-image {
+    height: 180px;
+    margin-left: 10px;
+}
+
+.welcome-text {
+    font-size: 48px;
+    margin: 0;
+}
+
+#home-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 40px;
+    flex-wrap: wrap;
+    margin-top: -200px;
+    margin-bottom: 5px;
+  }
+  
+  .info-box {
+    padding: 30px;
+    border-radius: 12px;
+    font-size: 22px; 
+    line-height: 1.6; 
+    min-width: 300px; 
+}
+#home-info .info-box:nth-child(2) p,
+#home-info .info-box:nth-child(3) p {
+    margin-bottom: 5px; 
+}
+#tree-pictures {
+    display: flex;
+    gap: 20px; 
+    justify-content: center; 
+    padding: 20px; 
+}
+
+#tree-pictures img {
+    border: 5px solid #E86F3D; 
+    border-radius: 8px; 
+    width: 400px; 
+    height: auto; 
+}
+
+footer {
+    padding-left: 20px;
+    font-size: 16px;
+    color: white;
+}
+
+.kids-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    margin: 0 40px;
+}
+
+.kids-text {
+    flex: 2;
+}
+
+#pictures-kids {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+
+#pictures-kids img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.info-kids {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    font-size: 20px;
+}
+
+.title-kids {
+    font-size: 35px;
+    padding: 15px;
+    margin-left: 20px;
+    color: #E86F3D;
+}
+@media (max-width: 768px) {
+    .kids-layout {
+      flex-direction: column;
+      margin: 0 20px;
+      gap: 20px;
+    }
+  
+    #pictures-kids img {
+      width: 100%; /* Bilder tar full bredde på mobil */
+      height: auto;
+    }
+  }
+
+.teachers-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    margin: 0 40px;
+}
+
+.infotext-teachers {
+    flex: 1.5;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.image-teachers {
+    flex: 1;
+}
+
+.image-teachers img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.info-teachers h1 {
+    font-size: 35px;
+    padding: 15px;
+    margin-left: 20px;
+    color: #E86F3D;
+}
+.contact-teachers {
+    margin: 40px;
+    padding: 20px;
+    border-left: 5px solid #E86F3D;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+.contact-teachers h2 {
+    margin-top: 0;
+    color: #E86F3D;
+}
+@media (max-width: 768px) {
+    .teachers-layout {
+      flex-direction: column;
+      margin: 0 20px; /* mindre margin på mobil */
+      gap: 20px; /* litt mindre avstand mellom elementene */
+    }
+  
+    .image-teachers img {
+      width: 100%; /* gjør bildet fullt bredde på mobil */
+      height: auto;
+    }
+  }
+.researcher-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 0 40px;
+}
+
+.info-researcher {
+    flex: 1.5;
+    font-size: 20px;
+    padding: 15px;
+    margin-left: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.image-researcher {
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* bildene skal ligge over hverandre */
+    justify-content: center;
+    gap: 20px;
+}
+
+.image-researcher img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.info-researcher h1 {
+    font-size: 35px;
+    padding: 15px;
+    margin-left: 20px;
+    color: #E86F3D;
+}
+
+.info-researcher {
+    flex: 1.5;
+    font-size: 20px;
+    padding: 15px;
+    margin-left: 20px; /* <--- Dette gir ekstra innrykk fra venstre */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+@media (max-width: 768px) {
+    .researcher-layout {
+      flex-direction: column;
+      margin: 0 20px;
+      gap: 20px;
+    }
+  
+    .image-researcher img {
+      width: 100%; /* Bilder tar full bredde på mobil */
+      height: auto;
+      margin-bottom: 15px; /* Litt luft mellom bildene */
+    }
+  }
+  
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+  
+.text {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+}
+  
+.image {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+  
+  
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.text h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #E86F3D; /* ← legger til oransje farge */
+}
+
+.visit-page {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: 'Roboto', sans-serif;
+}
+  
+.visit-page h1,
+.visit-page h2 {
+    margin-top: 30px;
+}
+  
+.visit-page h1.orange-title {
+    color: #E86F3D;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+  
+.hours-list {
+    list-style: none;
+    padding-left: 0;
+}
+  
+.hours-list li {
+    margin-bottom: 5px;
+}
+  
+.orange-title {
+    color: #E86F3D;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.content-with-image {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: 'Roboto', sans-serif;
+}
+  
+.text-content {
+    flex: 1;
+}
+body {
+    background-color: #0D0D0D;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+  }
+  
+  .text-content {
+    flex: 1;
+  }
+  
+  .text-content h1 {
+    color: #E86F3D;
+    margin-bottom: 20px;
+    font-size: 2.2em;
+  }
+  
+  .text-content h2 {
+    color: #E86F3D;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .text-content h3 {
+    color: #E86F3D;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .text-content p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+  }
+  
+  .image-content {
+    flex: 0 0 350px;
+  }
+  
+  .image-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 0 15px rgba(232, 111, 61, 0.7);
+  }
+  
