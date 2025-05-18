@@ -58,7 +58,6 @@ header {
       display: block;
     }
   }
-/* Mobilvisning – tekst over bildet */
 @media (max-width: 768px) {
     .logo-and-text {
       display: block;
@@ -66,11 +65,11 @@ header {
     }
   
     .welcome-text {
-      position: static; /* ikke absolutt, la den flyte normalt */
-      color: #333; /* gjerne mørk tekst på lys bakgrunn */
+      position: static;
+      color: #333;
       font-size: 1.5rem;
-      margin-bottom: 1rem; /* litt avstand mellom tekst og bilde */
-      text-shadow: none; /* fjern tekstskygge siden den ikke er over bildet */
+      margin-bottom: 1rem;
+      text-shadow: none;
       padding: 0;
     }
   
@@ -266,12 +265,12 @@ footer {
 @media (max-width: 768px) {
     .teachers-layout {
       flex-direction: column;
-      margin: 0 20px; /* mindre margin på mobil */
-      gap: 20px; /* litt mindre avstand mellom elementene */
+      margin: 0 20px;
+      gap: 20px;
     }
   
     .image-teachers img {
-      width: 100%; /* gjør bildet fullt bredde på mobil */
+      width: 100%;
       height: auto;
     }
   }
@@ -294,7 +293,7 @@ footer {
 .image-researcher {
     flex: 1;
     display: flex;
-    flex-direction: column; /* bildene skal ligge over hverandre */
+    flex-direction: column;
     justify-content: center;
     gap: 20px;
 }
@@ -318,7 +317,7 @@ footer {
     flex: 1.5;
     font-size: 20px;
     padding: 15px;
-    margin-left: 20px; /* <--- Dette gir ekstra innrykk fra venstre */
+    margin-left: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
@@ -330,9 +329,9 @@ footer {
     }
   
     .image-researcher img {
-      width: 100%; /* Bilder tar full bredde på mobil */
+      width: 100%;
       height: auto;
-      margin-bottom: 15px; /* Litt luft mellom bildene */
+      margin-bottom: 15px;
     }
   }
   
@@ -370,7 +369,7 @@ footer {
 .text h1 {
     font-size: 2em;
     margin-bottom: 20px;
-    color: #E86F3D; /* ← legger til oransje farge */
+    color: #E86F3D;
 }
 
 .visit-page {
